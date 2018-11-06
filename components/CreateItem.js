@@ -83,12 +83,12 @@ class CreateItem extends Component {
             <Error error={error} />
             <fieldset disabled={loading} aria-busy={loading}>
               <label htmlFor="title">
-                Title
+                Name
                 <input
                   type="text"
                   id="title"
                   name="title"
-                  placeholder="Title"
+                  placeholder="Enter item name"
                   required
                   value={this.state.title}
                   onChange={this.handleChange}
@@ -100,7 +100,7 @@ class CreateItem extends Component {
                 <textarea
                   id="description"
                   name="description"
-                  placeholder="Enter A Description"
+                  placeholder="Enter item description"
                   required
                   value={this.state.description}
                   onChange={this.handleChange}
@@ -113,7 +113,7 @@ class CreateItem extends Component {
                   type="number"
                   id="price"
                   name="price"
-                  placeholder="Price"
+                  placeholder="Enter item price"
                   required
                   value={this.state.price}
                   onChange={this.handleChange}
@@ -126,7 +126,7 @@ class CreateItem extends Component {
                   type="file"
                   id="file"
                   name="file"
-                  placeholder="Upload an image"
+                  placeholder="Upload item image"
                   required
                   onChange={this.uploadFile}
                 />
